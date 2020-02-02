@@ -8,3 +8,4 @@ https://www.digitalocean.com/community/tutorials/how-to-install-phpmyadmin-from-
 https://www.tecmint.com/install-free-ssl-certificate-for-nginx-on-debian-10/
 https://www.linuxbabe.com/linux-server/install-phpmyadmin-nginx-ubuntu-16-04
 https://www.itzgeek.com/how-tos/linux/debian/how-to-install-phpmyadmin-with-nginx-on-debian-10.html
+https://www.youtube.com/watch?v=6Er8MAvTWlI
