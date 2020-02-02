@@ -13,3 +13,4 @@ https://takacsmark.com/dockerfile-tutorial-by-example-dockerfile-best-practices-
 #best TUTorial
 
 https://kifarunix.com/install-phpmyadmin-with-nginx-on-debian-10-buster/
+https://gist.github.com/janikvonrotz/9320678
