@@ -9,3 +9,7 @@ https://www.tecmint.com/install-free-ssl-certificate-for-nginx-on-debian-10/
 https://www.linuxbabe.com/linux-server/install-phpmyadmin-nginx-ubuntu-16-04
 https://www.itzgeek.com/how-tos/linux/debian/how-to-install-phpmyadmin-with-nginx-on-debian-10.html
 https://takacsmark.com/dockerfile-tutorial-by-example-dockerfile-best-practices-2018/
+
+#best TUTorial
+
+https://kifarunix.com/install-phpmyadmin-with-nginx-on-debian-10-buster/
