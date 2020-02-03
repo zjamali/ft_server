@@ -20,3 +20,4 @@ https://www.tecmint.com/install-wordpress-with-nginx-mariadb-php-on-debian-9/
 #making servers 
 
 https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-server-blocks-virtual-hosts-on-ubuntu-16-04
+https://www.keycdn.com/support/nginx-virtual-host
