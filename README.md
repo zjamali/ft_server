@@ -16,3 +16,7 @@ https://kifarunix.com/install-phpmyadmin-with-nginx-on-debian-10-buster/
 https://gist.github.com/janikvonrotz/9320678
 https://www.itzgeek.com/how-tos/linux/debian/how-to-setup-lets-encrypt-ssl-certificate-with-nginx-on-debian-10-debian-9.html
 https://www.tecmint.com/install-wordpress-with-nginx-mariadb-php-on-debian-9/
+
+#making servers 
+
+https://www.digitalocean.com/community/tutorials/how-to-set-up-nginx-server-blocks-virtual-hosts-on-ubuntu-16-04
