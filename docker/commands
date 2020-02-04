@@ -1,0 +1,61 @@
+#apt update
+#apt install nginx -y 
+#apt install mariadb-server mariadb-client -y
+//#service nginx start
+#service mysql start
+
+#mysql -uroot -e "CREATE DATABASE wp";
+#mysql -uroot -e "SET PASSWORD FOR 'root'@'localhost' = PASSWORD('passwd')";
+
+#apt install php-fpm php-mysql -y
+
+/****configure the default file for php directory sites-enabled***/
+    #mv src/default /etc/nginx/sites-enabled/default
+    #service nginx restart
+    #service php7.3-fpm start
+    #service php7.3-fpm restart
+
+
+/***** install phpmyadmin ******/
+
+#apt install php-{mbstring,zip,gd,xml,pear,gettext,cgi} -y
+#mkdir /var/www/html/phpmyadmin
+#apt install wget -y
+#wget https://files.phpmyadmin.net/phpMyAdmin/4.9.0.1/phpMyAdmin-4.9.0.1-english.tar.gz
+#tar xzf phpMyAdmin-4.9.0.1-english.tar.gz --strip-components=1 -C /var/www/html/phpmyadmin
+
+    **comfigure phpmyadmin ***
+    #mv src/config.inc.php /var/www/html/phpmyadmin/config.inc.php
+    #chmod 660 /var/www/html/phpmyadmin/config.inc.php
+    #chown -R www-data:www-data /var/www/html/phpmyadmin
+#service nginx restart
+#service php7.3-fpm restart
+
+/******** install wordpress ********/
+
+#apt install -y php-curl php-gd php-intl php-mbstring php-soap php-xml php-xmlrpc php-zip
+#mv src/wordpress /etc/nginx/sites-available/wordpress
+#ln -s /etc/nginx/sites-available/wordpress /etc/nginx/sites-enabled/
+
+#service nginx restart
+
+#wget https://wordpress.org/latest.tar.gz -P /tmp
+#mkdir /var/www/html/wordpress
+#tar xzf /tmp/latest.tar.gz --strip-components=1 -C /var/www/html/wordpress
+
+    ** configure wordpress 
+#mv src/wp-config.php /var/www/html/wordpress/wp-config.php
+#chown -R www-data:www-data /var/www/html/wordpress
+
+#service php7.3-fpm restart
+#service mysql restart
+#service nginx restart
+
+/********* install ssl ******/
+
+    #mv localhost.crt /etc/ssl/certs/localhost.crt
+    #mv localhost.key /etc/ssl/private/localhost.key
+
+#service nginx reload
+#service mysql reload
+#service php7.3-fpm reload 

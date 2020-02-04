@@ -1,0 +1,24 @@
+#apt update
+#apt upgrade -y
+#apt install nginx -y
+#service nginx start
+
+#chown www-data:www-data /usr/share/nginx/html/ -R
+#apt install mariadb-server mariadb-client -y
+#service mysql start
+
+#apt install php7.3 php7.3-fpm php7.3-mysql php-common php7.3-cli php7.3-common php7.3-json php7.3-opcache php7.3-readline -y
+#service php7.3-fpm start 
+
+--> edit the default file to run php /etc/nginx/sites-availables/default
+	add index.php to indexes and add this after serve_name;
+	  |location ~ \.php$ {
+		            include snippets/fastcgi-php.conf;
+					          fastcgi_pass unix:/var/run/php/php7.3-fpm.sock;
+							    }|
+
+#service nginx restart
+
+----> install phpmyadmin
+
+
